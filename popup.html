@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Auto Refresh Settings</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        padding: 10px;
+        min-width: 200px;
+      }
+      label {
+        margin-top: 10px;
+        display: block;
+      }
+      input[type="number"] {
+        width: 100%;
+      }
+      button {
+        margin-top: 10px;
+        width: 100%;
+        padding: 5px;
+        background-color: #4caf50;
+        color: white;
+        border: none;
+        cursor: pointer;
+      }
+      button:hover {
+        background-color: #45a049;
+      }
+      .counter {
+        margin-top: 10px;
+        font-weight: bold;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <label for="minInterval">Minimum Interval (ms):</label>
+    <input type="number" id="minInterval" placeholder="30000" />
+
+    <label for="maxInterval">Maximum Interval (ms):</label>
+    <input type="number" id="maxInterval" placeholder="60000" />
+
+    <button id="save">Save</button>
+
+    <div class="counter">Refresh Count: <span id="refreshCount">0</span></div>
+
+    <!-- Link to external JS file -->
+    <script src="popup.js"></script>
+  </body>
+</html>
